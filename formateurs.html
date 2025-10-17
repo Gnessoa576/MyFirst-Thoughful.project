@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriCode Institut - Formateurs</title>
+  <style>
+    body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+   }
+
+   h2,h3{
+    color: #002b5b;
+   }
+
+   a{
+    text-decoration: none;
+    color: inherit;
+   }
+
+   header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #002b5b;
+    color: white;
+    position: sticky;
+    top: 0;
+   }
+
+   .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+
+   nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+   }
+
+   nav a{
+    color: white;
+    transition: color 0.3s;
+   }
+
+   nav a:hover, nav a.active{
+    color: #00b4d8;
+   }
+
+   .btn-inscription{
+    background-color: #00b4d8;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+   }
+
+   .btn-inscription:hover{
+    background-color: #0096c7;
+   }
+
+   .page-header{
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+   }
+
+   .page-header h2{
+    color: #002b5b;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+   }
+
+   .page-header p{
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+   }
+
+   .formateurs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 60px;
+    background-color: white;
+   }
+
+   .formateur-card{
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .formateur-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+   }
+
+   .formateur-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+   }
+
+   .formateur-card h3{
+    color: #002b5b;
+    margin-bottom: 5px;
+   }
+
+   .formateur-card .role{
+    font-weight: 600;
+    color: #00b4d8;
+    margin-bottom: 10px;
+   }
+
+   .formateur-card p{
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+   }
+
+   footer{
+    background-color: #002b5b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+   }
+  </style>
+</head>
+<body>
+  <header>
+        <h1 class="logo">AfriCode Institut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="formateurs.html" class="active">Formateurs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html" class="btn-inscription">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>Nos formateurs</h2>
+        <p>Des experts passionnés qui vous accompagnent tout au long de votre apprentissage.</p>
+      </section>
+
+      <section class="formateurs">
+        <div class="formateur-card">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="John Doe">
+          <h3>John Doe</h3>
+          <p class="role">Développeur Full Stack</p>
+          <p>Spécialiste JavaScript et React, John forme les étudiants au développement web moderne et aux bonnes pratiques de code.</p>
+        </div>
+
+        <div class="formateur-card">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="Sarah Dupont">
+          <h3>Sarah Dupont</h3>
+          <p class="role">Experte en Design UI/UX</p>
+          <p>Graphiste et designer expérimentée, Sarah enseigne la conception d’interfaces intuitives et centrées sur l’utilisateur.</p>
+        </div>
+
+        <div class="formateur-card">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" alt="Lucas Martin">
+          <h3>Lucas Martin</h3>
+          <p class="role">Ingénieur en IA</p>
+          <p>Lucas accompagne les apprenants dans la découverte du machine learning, du deep learning et de l’analyse de données.</p>
+        </div>
+
+        <div class="formateur-card">
+          <img src="https://images.unsplash.com/photo-1628157588553-5b2b9e5b8e59" alt="Emma Lefebvre">
+          <h3>Emma Lefebvre</h3>
+          <p class="role">Spécialiste Cybersécurité</p>
+          <p>Experte en sécurité informatique, Emma partage son expérience pour aider les étudiants à protéger les systèmes numériques.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AfriCode Institut — Tous droits réservés</p>
+    </footer>
+</body>
+</html>

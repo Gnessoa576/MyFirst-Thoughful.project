@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriCode Institut- Formations</title>
+  <style>
+    body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+   }
+
+   h2,h3{
+    color: #002b5b;
+   }
+
+   a{
+    text-decoration: none;
+    color: inherit;
+   }
+
+   header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #002b5b;
+    color: white;
+    position: sticky;
+    top: 0;
+   }
+
+   .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+
+   nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+   }
+
+   nav a{
+    color: white;
+    transition: color 0.3s;
+   }
+
+   nav a:hover, nav a.active{
+    color: #00b4d8;
+   }
+
+   .btn-inscription{
+    background-color: #00b4d8;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+   }
+
+   .btn-inscription:hover{
+    background-color: #0096c7;
+   }
+
+   .page-header{
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+   }
+
+   .page-header h2{
+    color: #002b5b;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+   }
+
+   .page-header p{
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+   }
+
+   .formations{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px;
+    background-color: white;
+   }
+
+   .formation-card{
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+   }
+
+   .formation-card:hover{
+    transform: translateY(-5px);
+   }
+
+   .formation-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+   }
+
+   .formation-card h3{
+    color: #002b5b;
+    margin: 15px 0 10px;
+   }
+
+   .formation-card p{
+    padding: 0 15px;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95em;
+   }
+
+   .formation-card .btn-primary{
+    margin-top: 15px;
+    display: inline-block;
+   }
+
+   footer{
+    background-color: #002b5b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+   }
+  </style>
+</head>
+<body>
+  <header>
+        <h1 class="logo">AfriCode Institut</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html" class="active">Formations</a></li>
+                <li><a href="formateurs.html">Formateurs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html" class="btn-inscription">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h2>Nos formations</h2>
+        <p>Développez vos compétences grâce à nos parcours complets et certifiants.</p>
+      </section>
+
+      <section class="formations">
+        <div class="formation-card">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7" alt="Développement Web">
+            <h3>Développement Web</h3>
+            <p>Apprenez à créer des sites modernes avec HTML, CSS, JavaScript et React. Devenez développeur front-end ou full-stack.</p>
+            <a href="inscription.html" class="btn-primary">S'inscrire</a>
+        </div>
+
+        <div class="formation-card">
+            <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Intelligence Artificielle">
+            <h3>Intelligence Artificielle</h3>
+            <p>Maîtrisez les bases du Machine Learning, du traitement d’image et du Deep Learning avec Python et TensorFlow.</p>
+            <a href="inscription.html" class="btn-primary">S'inscrire</a>
+        </div>
+
+        <div class="formation-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Design UI/UX">
+            <h3>Design UI/UX</h3>
+            <p>Concevez des interfaces intuitives et attractives. Apprenez Figma, Adobe XD et les principes d’ergonomie.</p>
+            <a href="inscription.html" class="btn-primary">S'inscrire</a>
+        </div>
+
+        <div class="formation-card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d" alt="Cybersécurité">
+            <h3>Cybersécurité</h3>
+            <p>Découvrez les fondamentaux de la sécurité informatique et protégez les systèmes contre les cyberattaques.</p>
+            <a href="inscription.html" class="btn-primary">S'inscrire</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AfriCode Institut — Tous droits réservés</p>
+    </footer>
+</body>
+</html>
