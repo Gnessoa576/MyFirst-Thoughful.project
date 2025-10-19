@@ -38,7 +38,7 @@ Le site est composé de plusieurs pages reliées par une navigation commune :
 - **Flexbox & Grid** — Disposition fluide et responsive  
 - **GitHub Pages** — Hébergement du site en ligne
 - 
-## 🏁 Auteur
+##  Auteur
 
 Projet réalisé par *Mr GAGNIE A* — Étudiant(e) en développement web.  
 Année : **2025**
