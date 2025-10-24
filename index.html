@@ -27,14 +27,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #002b5b;
+    background-color: #2049ea;
     color: white;
     position: sticky;
     top: 0;
+    font-family: "montserrat";
    }
 
    .logo{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
    }
 
@@ -99,21 +100,17 @@
    }
 
    .abaut{
-    padding: 60px 20px;
     text-align: center;
     background-color: white;
-   }
-
-   .abaut h2{
-    margin-bottom: 40px;
    }
 
    .cards{
     background-color: #f1f1f1;
     border-radius: 12px;
     padding: 25px;
-    width: 280px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     transition: transform 0.3s;
    }
 
@@ -121,9 +118,37 @@
     transform: translateY(-5px);
    }
 
+   /*.east{
+    text-align: center;
+    background-color: white;
+   }*/
+
+   .Dodoma{
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    transition: transform 0.3s;
+   }
+
+    img{
+    width: 50%;
+    height: 80%;
+    border-radius: 5%;
+   }
+
+   .nairobi p img{
+    width: 10%;
+    height: 10%;
+    top: 27px;
+    float: left;
+   }
+
    footer{
     background-color: #002b5b;
-    color: white;
+    color: #474343;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
@@ -152,23 +177,45 @@
             <p>Rejoignez AfriCode Institut et formez-vous en ligne aux compétences numériques les plus demandées : développement web, IA, design et plus encore.</p>
             <a href="formations.html" class="btn-primary">Découvrir nos formations</a>
         </div>
-    </section>
+      </section>
 
-    <section class="about">
+      <section class="abaut">
         <h2>Pourquoi choisir AfriCode Institut ?</h2>
         <div class="cards">
-            <div class="card">
-                <h3>Formations 100% en ligne</h3>
-                <p>Étudiez à votre rythme, où que vous soyez, grâce à notre plateforme d’apprentissage moderne.</p>
-            </div>
-            <div class="card">
-                <h3>Experts certifiés</h3>
-                <p>Nos formateurs sont des professionnels en activité partageant leurs connaissances concrètes.</p>
-            </div>
-            <div class="card">
-                <h3>Certificats reconnus</h3>
-                <p>Obtenez un certificat validant vos compétences à la fin de chaque parcours.</p>
-            </div>
+          <div class="card">
+            <h3>Formations 100% en ligne</h3>
+            <p>Étudiez à votre rythme, où que vous soyez, grâce à notre plateforme d’apprentissage moderne.</p>
+          </div>
+          <div class="card">
+            <h3>Experts certifiés</h3>
+            <p>Nos formateurs sont des professionnels en activité partageant leurs connaissances concrètes.</p>
+          </div>
+          <div class="card">
+            <h3>Certificats reconnus</h3>
+            <p>Obtenez un certificat validant vos compétences à la fin de chaque parcours.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="east">
+        <h2>Les témoignages</h2>
+        <div class="Dodoma">
+          
+          <img src="Design sans titre.png" alt="Etudiant">
+          
+
+          <div class="nairobi">
+            <p><img src="send-message.png" alt="icone"></p>
+            
+            <h3>Nos étudiants témoignent</h3>
+            <h4>Adjé</h4>
+            <p>Data Scientist</p>
+            <p>"J'ai choisi AfriCode Institut car c'est pratique.
+              On peut concilier vie professionnelle et vie personnelle,
+              on peut travailler de chez soi et on est rapidement en mode projet.."
+            </p>
+    
+          </div>
         </div>
       </section>
     </main>
